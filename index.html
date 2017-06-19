@@ -1,1 +1,73 @@
-dfsa
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="format-detection" content="email=no,telephone=no" />
+  <title>燃料</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- <script src="./js/lib/adapter.js"></script> -->
+</head>
+<body>
+  <header>
+    <h1>✔</h1>
+    <h2>
+      <!-- <p>点击左边头像：二维码识别关注微信订阅</p> -->
+      <p>点击右边文字：查看历史文章</p>
+    </h2>
+  </header>
+  <section class="main">
+    <ul id="main-ul">
+      <li>
+        <h3><img src="images/head-pics/bitsea.jpeg" alt=""></h3>
+        <a href="#">
+          <p>槽边往事</p>
+          <p>微信号 bitsea</p>
+        </a>
+      </li>
+    </ul>
+    <script id="j-main-ul-all" type="text/html"">
+      {{each dataAll as v k}}
+        <li>
+          <h3><img src="{{v.headPic}}" alt=""></h3>
+          <a href="{{v.historyHref}}">
+            <p>{{v.name}}</p>
+            <p>微信号 {{v.wxNum}}</p>
+          </a>
+        </li>
+      {{/each}}
+    </script>
+    <script id="j-main-ul-wx" type="text/html"">
+      {{each dataWx as v k}}
+        <li>
+          <h3><img src="{{v.headPic}}" alt=""></h3>
+          <a href="{{v.historyHref}}">
+            <p>{{v.name}}</p>
+            <p>微信号 {{v.wxNum}}</p>
+          </a>
+        </li>
+      {{/each}}
+    </script>
+    <script id="j-main-ul-v" type="text/html"">
+      {{each dataV as v k}}
+        <li>
+          <h3><img src="{{v.headPic}}" alt=""></h3>
+          <a href="{{v.historyHref}}">
+            <p>{{v.name}}</p>
+            <p>微信号 {{v.wxNum}}</p>
+          </a>
+        </li>
+      {{/each}}
+    </script>
+  </section>
+  <footer>
+    <h1 id="footer-all">全部</h1>
+    <h2 id="footer-wx">微信订阅</h2>
+    <h3 id="footer-v">视频节目</h3>
+  </footer>
+  <script src="js/lib/zepto.fxm.min.js"></script>
+  <script src="js/lib/artTemplateSimple.js"></script>
+  <!-- <script src='js/lib/fastclick.min.js'></script> -->
+  <script src="js/all.js"></script>
+</body>
+</html>

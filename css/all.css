@@ -1,0 +1,193 @@
+/*reset and 移动端百分比布局或flex布局*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  -webkit-tap-highlight-color:rgba(255, 255, 255, 0);
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+  display:block;
+}
+
+nav, ul {
+  list-style:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  outline:none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+input, select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color:rgba(255, 255, 255, 0);
+  /*background-color: rgba(255, 255, 255, 0);*/
+  /*background: red;*/
+}
+
+html, body {
+  height:100%;
+} 
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  background-color: #ebebeb;
+  font-size: 16px;
+}
+
+.cf {
+  zoom: 1;
+}
+.cf:after {
+  content: '';
+  font-size: 0;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  display: block;
+}  
+
+/*end reset*/
+
+header {
+  display: flex;
+  height: 40px;
+  background-color: #FFD700;
+}
+header h1 {
+  width: 66px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 3px;
+}
+header h2 {
+  flex: 1;
+  padding-top: 4px;
+  color: #b3b3b3;
+  background-color: #f7f7f7;
+}
+header p {
+  line-height: 16px;
+  font-size: 12px;
+  text-indent: .5em;
+}
+
+.main {
+  margin-top: 2px;
+  padding-bottom: 68px;
+}
+.main li {
+  display: flex;
+  height: 66px;
+  border-bottom: 1px solid #e9e9eb;
+  background-color: #fff;
+}
+.main h3 {
+  width: 66px;
+  text-align: center;
+}
+.main img {
+  height: 100%;
+}
+.main a {
+  flex: 4;
+  display: block;
+  padding-top: 9px;
+  /*text-align: center;*/
+  font-size: 14px;
+  color: #808080;
+  background: url(../images/right-arrow.png) no-repeat 96% center;
+  background-size: 9px auto;
+}
+.main p {
+  line-height: 24px;
+  text-indent: 2em;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  line-height: 42px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #e9e9eb;
+  background-color: #fcfcfc;
+}
+footer h1 {
+  width: 66px;
+}
+footer h2 {
+  border-left: 1px solid #e9e9eb;
+  border-right: 1px solid #e9e9eb;
+  flex: 1;
+}
+footer h3 {
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

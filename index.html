@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -19,17 +19,17 @@
   <section class="main">
     <ul id="main-ul">
       <li>
-        <h3><img src="images/head-pics/bitsea.jpeg" alt=""></h3>
+        <h3>🎃</h3>
         <a href="#">
           <p>槽边往事</p>
           <p>微信号 bitsea</p>
         </a>
       </li>
     </ul>
-    <script id="j-main-ul-all" type="text/html"">
-      {{each dataAll as v k}}
+    <script id="j-recommend" type="text/html"">
+      {{each recommends as v k}}
         <li>
-          <h3><img src="{{v.headPic}}" alt=""></h3>
+          <h3>🎃</h3>
           <a href="{{v.historyHref}}">
             <p>{{v.name}}</p>
             <p>微信号 {{v.wxNum}}</p>
@@ -37,21 +37,10 @@
         </li>
       {{/each}}
     </script>
-    <script id="j-main-ul-wx" type="text/html"">
-      {{each dataWx as v k}}
+    <script id="j-subscribe" type="text/html"">
+      {{each subscribes as v k}}
         <li>
-          <h3><img src="{{v.headPic}}" alt=""></h3>
-          <a href="{{v.historyHref}}">
-            <p>{{v.name}}</p>
-            <p>微信号 {{v.wxNum}}</p>
-          </a>
-        </li>
-      {{/each}}
-    </script>
-    <script id="j-main-ul-v" type="text/html"">
-      {{each dataV as v k}}
-        <li>
-          <h3><img src="{{v.headPic}}" alt=""></h3>
+          <h3>⛽</h3>
           <a href="{{v.historyHref}}">
             <p>{{v.name}}</p>
             <p>微信号 {{v.wxNum}}</p>
@@ -61,9 +50,8 @@
     </script>
   </section>
   <footer>
-    <h1 id="footer-all">全部</h1>
-    <h2 id="footer-wx">微信订阅</h2>
-    <h3 id="footer-v">视频节目</h3>
+    <h1 id="recommend">推荐</h1>
+    <h2 id="subscribe">订阅</h2>
   </footer>
   <script src="js/lib/zepto.fxm.min.js"></script>
   <script src="js/lib/artTemplateSimple.js"></script>

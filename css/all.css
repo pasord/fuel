@@ -95,7 +95,7 @@ body {
 
 header {
   display: flex;
-  height: 40px;
+  height: 41px;
   background-color: #FFD700;
 }
 header h1 {
@@ -118,7 +118,7 @@ header p {
 }
 
 .main {
-  margin-top: 2px;
+  margin-top: 6px;
   padding-bottom: 68px;
 }
 .main li {
@@ -129,7 +129,9 @@ header p {
 }
 .main h3 {
   width: 66px;
+  line-height: 66px;
   text-align: center;
+  background-color: #FFD700;
 }
 .main img {
   height: 100%;
@@ -163,16 +165,13 @@ footer {
   background-color: #fcfcfc;
 }
 footer h1 {
-  width: 66px;
+  flex: 1;
+  border-right: 1px solid #e9e9eb;
 }
 footer h2 {
-  border-left: 1px solid #e9e9eb;
-  border-right: 1px solid #e9e9eb;
   flex: 1;
 }
-footer h3 {
-  flex: 1;
-}
+
 
 
 

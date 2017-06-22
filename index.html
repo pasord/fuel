@@ -12,8 +12,8 @@
   <header>
     <h1>✔</h1>
     <h2>
-      <!-- <p>点击左边头像：二维码识别关注微信订阅</p> -->
-      <p>点击右边文字：查看历史文章</p>
+      <p id="header-desc">点击文字：查看文章详情</p>
+      <!-- <p>点击文字：查看历史文章</p> -->
     </h2>
   </header>
   <section class="main">
@@ -21,8 +21,10 @@
       <li>
         <h3>🎃</h3>
         <a href="#">
-          <p>槽边往事</p>
-          <p>微信号 bitsea</p>
+          <h4>对话王兴：太多人关注边界，而不关注核心，往下望新界，而不关注核心，往下望新界，而不关注核心，往下望新界，而不关注核心，往下望新dsfs</h4>
+          <h5>LateNews by 小晚</h5>
+<!--           <p>槽边往事</p>
+          <p>微信号 bitsea</p> -->
         </a>
       </li>
     </ul>
@@ -30,9 +32,9 @@
       {{each recommends as v k}}
         <li>
           <h3>🎃</h3>
-          <a href="{{v.historyHref}}">
-            <p>{{v.name}}</p>
-            <p>微信号 {{v.wxNum}}</p>
+          <a href="{{v.detailHref}}">
+            <h4>{{v.articleTitle}}</h4>
+            <h5>{{v.byWho}}</h5>
           </a>
         </li>
       {{/each}}
@@ -50,7 +52,7 @@
     </script>
   </section>
   <footer>
-    <h1 id="recommend">推荐</h1>
+    <h1 class="footer-on" id="recommend">推荐</h1>
     <h2 id="subscribe">订阅</h2>
   </footer>
   <script src="js/lib/zepto.fxm.min.js"></script>

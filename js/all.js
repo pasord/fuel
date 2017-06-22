@@ -9,36 +9,26 @@
     "data": {
       "recommends": [
         {
-          "name": "槽边往事",
-          "headPic": "images/head-pics/bitsea.jpeg",
-          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjAzODU2MA==&scene=124#wechat_redirect",
-          "wxNum": "bitsea"
+          "detailHref": "http://mp.weixin.qq.com/s/SvLoGlrW3-mgkAAXhIRz5Q",
+          "articleTitle": "对话王兴：太多人关注边界，而不关注核心",
+          "byWho": "LateNews by 小晚",
         },
         {
-          "name": "新生大学",
-          "headPic": "images/head-pics/xinshengdaxue.jpeg",
-          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMDgyMTA3Mg==&scene=124#wechat_redirect",
-          "wxNum": "xinshengdaxue"
-        },
-        {
-          "name": "袁腾飞工作室",
-          "headPic": "images/head-pics/ytfjls.jpeg",
-          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTgwNDQ0MQ==&scene=123&uin=Nzk5NTMwNQ%3D%3D&key=5e973e5d3cae484ac43f27f47aad7e9f8e3c6c809eed9a9ec27e79fe14a43c7404ae44db8e9f0caeccc9cee8213ebfa4bdcd7e276711b0dde0237dff00fe397fd0cbdaadc7e3465e369f3eb97709e71a&devicetype=iMac+MacBookAir6%2C2+OSX+OSX+10.12.5+build(16F73)&version=12020810&lang=zh_CN&nettype=WIFI&a8scene=0&fontScale=100&pass_ticket=00PNcONQ5%2BQV7dsauQMMW8x2XTZthKYq0IZ4i%2FoSsqg%3D",
-          "wxNum": "ytfjls"
+          "detailHref": "http://mp.weixin.qq.com/s/w8Vs7WRGmZVHLEl6-Oaa7g",
+          "articleTitle": "罗辑思维的「成功」之道",
+          "byWho": "MacTalk",
         }
       ],
       "subscribes": [
         {
-          "name": "槽边往事",
-          "headPic": "images/head-pics/bitsea.jpeg",
           "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjAzODU2MA==&scene=124#wechat_redirect",
+          "name": "槽边往事",
           "wxNum": "bitsea"
         },
         {
-          "name": "新生大学",
-          "headPic": "images/head-pics/xinshengdaxue.jpeg",
-          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMDgyMTA3Mg==&scene=124#wechat_redirect",
-          "wxNum": "xinshengdaxue"
+          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTgwNDQ0MQ==&scene=124#wechat_redirect",
+          "name": "袁腾飞工作室",
+          "wxNum": "ytfjls"
         }
       ]
     }
@@ -47,6 +37,7 @@
 var $mainUl = $('#main-ul');
 var $recommend = $('#recommend');
 var $subscribe = $('#subscribe');
+var $headerDesc = $('#header-desc');
 
 // 渲染推荐列表
 var recommendHtml = template('j-recommend',data.data);
@@ -59,27 +50,16 @@ var subscribeHtml = template('j-subscribe',data.data);
 $recommend.click(function(event) {
   console.log(1);
   $mainUl.html(recommendHtml);
+  $(this).addClass('footer-on').siblings().removeClass('footer-on');
+  $headerDesc.text('点击文字：查看文章详情');
 });
 // 点击订阅
 $subscribe.click(function(event) {
   console.log(2);
   $mainUl.html(subscribeHtml);
+  $(this).addClass('footer-on').siblings().removeClass('footer-on');
+  $headerDesc.text('点击文字：查看历史文章');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

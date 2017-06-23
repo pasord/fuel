@@ -194,6 +194,11 @@ footer .footer-on {
   background-color: #FFD700;
 }
 
+footer a {
+  display: block;
+  line-height: 56px;
+}
+
 
 
 

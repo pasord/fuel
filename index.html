@@ -12,24 +12,26 @@
   <header>
     <h1>✔</h1>
     <h2>
-      <p id="header-desc">点击文字：查看文章详情</p>
-      <!-- <p>点击文字：查看历史文章</p> -->
+      <p id="header-desc">感觉文章不错就收藏吧</p>
+      <!-- <p>感觉好文章多就订阅吧</p> -->
     </h2>
   </header>
   <section class="main">
     <ul id="main-ul">
+<!--       <h2>sfs</h2>
       <li>
         <h3>🎃</h3>
         <a href="#">
           <h4>对话王兴：太多人关注边界，而不关注核心，往下望新界，而不关注核心，往下望新界，而不关注核心，往下望新界，而不关注核心，往下望新dsfs</h4>
           <h5>LateNews by 小晚</h5>
-<!--           <p>槽边往事</p>
-          <p>微信号 bitsea</p> -->
+          <p>槽边往事</p>
+          <p>微信号 bitsea <span>已推荐1篇</span></p>
         </a>
-      </li>
+      </li> -->
     </ul>
     <script id="j-recommend" type="text/html"">
       {{each recommends as v k}}
+        <h2>{{v.date}}</h2>
         <li>
           <h3>🎃</h3>
           <a href="{{v.detailHref}}">
@@ -41,13 +43,15 @@
     </script>
     <script id="j-subscribe" type="text/html"">
       {{each subscribes as v k}}
-        <li>
-          <h3>⛽</h3>
-          <a href="{{v.historyHref}}">
-            <p>{{v.name}}</p>
-            <p>微信号 {{v.wxNum}}</p>
-          </a>
-        </li>
+        {{if v.amount=="⛽"}}
+          <li>
+            <h3>⛽</h3>
+            <a href="{{v.historyHref}}">
+              <p>{{v.name}}</p>
+              <p>微信号 {{v.wxNum}}</p>
+            </a>
+          </li>
+        {{/if}}
       {{/each}}
     </script>
   </section>

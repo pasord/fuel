@@ -91,9 +91,17 @@ body {
   display: block;
 }  
 
+.flex {
+  display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+  display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
 /*end reset*/
 
 header {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   height: 41px;
   background-color: #FFD700;
@@ -106,6 +114,7 @@ header h1 {
   border-radius: 3px;
 }
 header h2 {
+  -webkit-flex: 1;
   flex: 1;
   padding-top: 4px;
   padding-left: 4%;
@@ -123,6 +132,8 @@ header p {
   padding-bottom: 68px;
 }
 .main li {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   height: 66px;
   border-bottom: 1px solid #e9e9eb;
@@ -145,6 +156,7 @@ header p {
   height: 100%;
 }
 .main a {
+  -webkit-flex: 4;
   flex: 4;
   display: block;
   padding-top: 8px;
@@ -180,6 +192,8 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   width: 100%;
   line-height: 56px;
@@ -189,10 +203,12 @@ footer {
   background-color: #fcfcfc;
 }
 footer h1 {
+  -webkit-flex: 1;
   flex: 1;
   border-right: 1px solid #e9e9eb;
 }
 footer h2 {
+  -webkit-flex: 1;
   flex: 1;
 }
 

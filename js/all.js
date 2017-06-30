@@ -32,6 +32,16 @@
           "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIzOTQ0MTUwMA==&scene=124#wechat_redirect",
           "name": "Sir电影",
           "wxNum": "dushetv"
+        },
+        {
+          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0ODAzMjM3MA==&scene=124#wechat_redirect",
+          "name": "各色人类研究中心",
+          "wxNum": "gesedna"
+        },
+        {
+          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3ODk5OTEzOA==&scene=124#wechat_redirect",
+          "name": "经纬创投",
+          "wxNum": "matrixpartnerschina"
         }
       ]
     }

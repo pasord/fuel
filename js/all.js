@@ -27,6 +27,11 @@
           "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5OTE3ODUyOA==&scene=124#wechat_redirect",
           "name": "IDG资本",
           "wxNum": "idg_capital"
+        },
+        {
+          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIzOTQ0MTUwMA==&scene=124#wechat_redirect",
+          "name": "Sir电影",
+          "wxNum": "dushetv"
         }
       ]
     }

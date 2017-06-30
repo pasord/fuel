@@ -22,6 +22,11 @@
           "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUyMjA1MDQ0NA==&scene=124#wechat_redirect",
           "name": "捕手志",
           "wxNum": "ibushouzhi"
+        },
+        {
+          "historyHref": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5OTE3ODUyOA==&scene=124#wechat_redirect",
+          "name": "IDG资本",
+          "wxNum": "idg_capital"
         }
       ]
     }
